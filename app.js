@@ -10,7 +10,7 @@ const methodOverride = require('method-override');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+const breweryController = require('./routes/brewery')
 
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise
@@ -42,7 +42,7 @@ app.use(methodOverride('_method'));
 
 app.use('/', index);
 app.use('/users', users);
-
+app.use('/breweries', breweryController);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
