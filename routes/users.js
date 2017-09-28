@@ -70,6 +70,21 @@ router.get('/:userId', (request, response) => {
 })
 
 // DELETE ROUTE
+// This Route will delete the user it is attached too
+router.get('/:userId/delete', (request, response) => {
+  // Set the variable to the userId to grab and delete
+  const userId = request.params.userId
 
+  // Use the Model to delete the ID
+  UserModel.findByIdAndRemove(userId)
+      .then(() => {
+        // after the item is found and deleted redirect to the index
+          response.redirect('/users')
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+
+})
 
 module.exports = router;
