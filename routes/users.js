@@ -21,6 +21,10 @@ router.get('/', (request, response) => {
 });
 
 // NEW ROUTE
+// This route will take you to a page with a new user form
+router.get('/new', (request, response) => {
+  response.render('user/new')
+});
 
 // CREATE ROUTE
 
