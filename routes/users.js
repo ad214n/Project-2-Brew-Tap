@@ -60,8 +60,21 @@ router.get('/:userId/edit', (request, response) => {
 
 
 // UPDATE ROUTE
+// This route is going to put the edited form back into
+// the database at the ID specified will all the new info
+router.put('/:userId', (request, response) => {
+    //Grabbing the ID and the request body to change
+    const userId = request.params.userId
+    const updatedUser = request.body
 
-
+    UserModel.findByIdAndUpdate(userId, updatedUser, { new: true})
+          .then(() => {
+            response.redirect(`/users/${userId}`)
+          })
+          .catch((error) => {
+            console.log(error)
+          })
+})
 
 // SHOW ROUTE
 
