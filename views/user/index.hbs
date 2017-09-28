@@ -7,7 +7,10 @@
 
     {{#each users}}
         <div>
-            {{this.name}} - {{this.age}} - {{this.city}}
+            Name :{{this.name}} - Age :{{this.age}} - Lives in:{{this.city}}
+        </div>
+        <div>
+            <a href="/users/{{this._id}}">{{this.name}}'s Info</a>
         </div>
     {{/each}}
 </div>

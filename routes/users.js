@@ -27,12 +27,47 @@ router.get('/new', (request, response) => {
 });
 
 // CREATE ROUTE
+// This will take the form from the New route parse it with body parser
+// And push it into the database
+router.post('/', (request, response) => {
+    const newUser = request.body
+
+    UserModel.create(newUser)
+        .then(() => {
+        // This will have accomplished saving and now redirect to the index
+          response.redirect('/users')
+      })
+        .catch((error) => {
+          console.log(error)
+        })
+})
+
 
 // EDIT ROUTE
 
+
+
 // UPDATE ROUTE
 
+
+
 // SHOW ROUTE
+
+router.get('/:userId', (request, response) => {
+  // this sets the user id from the parameters
+  const userId = request.params.userId
+    // Use the UserId to pull and show 1 user and render it through hbs
+  UserModel.findById(userId)
+      .then((user) => {
+           response.render('user/show', {
+              user: user
+          })
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+
+})
 
 // DELETE ROUTE
 
