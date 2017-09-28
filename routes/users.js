@@ -44,7 +44,19 @@ router.post('/', (request, response) => {
 
 
 // EDIT ROUTE
+// This route will render an edit form for the specified user
+router.get('/:userId/edit', (request, response) => {
+      const userId = request.params.userId
 
+      // This will find the Id from the parameters and render
+      // the form with the already exsisting info
+      UserModel.findById(userId)
+          .then((user) => {
+            response.render('user/edit', {
+              user: user
+            })
+          })
+})
 
 
 // UPDATE ROUTE
