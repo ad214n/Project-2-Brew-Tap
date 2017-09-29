@@ -1,8 +1,19 @@
-body {
+body {  
+  color: #FF0800;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: flex;
+  background: url("http://images.pond5.com/closeup-beer-bubbles-background-footage-025332112_prevstill.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-size: 25px;
+  text-align: center;
+}
+
+#container {
+  background: rgba(0, 0, 0, 0.56)
 }
 
 a {
-  color: #00B7FF;
+  color: #3700FF;
+  font-size: 20px;
 }
