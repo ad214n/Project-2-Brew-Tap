@@ -1,0 +1,28 @@
+<h1>This Beer is for you!!!!</h1>
+
+<form action="/breweries/{{breweryId}}/beers" method="POST">
+<ul>
+    <li>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+    </li>
+    <li>
+        <label for="abv">ABV</label>
+        <input type="number" name="abv">
+    </li>
+    <li>
+        <label for="ibus">IBUS</label>
+        <input type="number" name="ibus">
+    </li>
+    <li>
+        <label for="description">Description</label>
+        <input type="text" name="description">
+    </li>
+    <li>
+    <label for="tastingNotes">Tasting Notes</label>
+    <input type="text" name="tastingNotes">
+    </li>
+</ul>
+    <input type="submit" value="Create">
+</form>
+

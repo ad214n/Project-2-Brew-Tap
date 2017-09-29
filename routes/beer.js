@@ -9,8 +9,8 @@ const BreweryModel = Schema.BreweryModel;
 
 // INDEX
 router.get('/', (request, response) => {
-    const breweryID = request.params.breweryId
-    BreweryModel.findById(breweryID)
+    const breweryId = request.params.breweryId
+    BreweryModel.findById(breweryId)
         .then((brewery) => {
             response.render('beer/index', {
                 brewery: brewery
@@ -22,6 +22,13 @@ router.get('/', (request, response) => {
 })
 
 // NEW
+router.get('/new', (request, response) => {
+    const breweryId = request.params.breweryId
+     response.render('beer/new', {
+         breweryId: breweryId
+     })
+})
+
 
 // CREATE
 
