@@ -3,8 +3,14 @@
     <h1>These people love beer!</h1>
 
     <h2>USERS</h2>
-
-
+    <div>
+       <p> Don't see you???!!</p>
+        <a href="/users/new">Make You Known!</a>
+    </div>
+        <div>
+        <a href="/breweries">Take me to the Breweries!!!</a>
+    </div>
+<hr>
     {{#each users}}
         <div>
             Name: {{this.name}} - Age: {{this.age}} - Lives in: {{this.city}}
@@ -13,12 +19,5 @@
             <a href="/users/{{this._id}}">{{this.name}}'s Info</a>
         </div>
     {{/each}}
-
-    <div>
-        Don't See Your Name??? No worries add yourself!
-        <a href="/users/new">Make Me Known!</a>
-    </div>
-    <div>
-        <a href="/breweries">Take me to the Breweries!!!</a>
-    </div>
+<hr>
 </div>

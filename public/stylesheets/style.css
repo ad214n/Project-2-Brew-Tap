@@ -1,5 +1,5 @@
 body {  
-  color: #FF0800;
+  color: #A4B99F;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   position: flex;
@@ -10,10 +10,18 @@ body {
 }
 
 #container {
-  background: rgba(0, 0, 0, 0.56)
+  background: rgba(0, 0, 0, 0.71)
 }
 
 a {
-  color: #3700FF;
+  color: #00B0C7;
   font-size: 20px;
+}
+.landing{
+  width: auto;
+  height: 200px;
+
+}
+.newUser{
+  padding: 40px;
 }
