@@ -2,16 +2,20 @@
 
     {{#each brewery.beers}}
 <div>
-    <ul>
-        <li>Name: {{this.name}}</li>
-        <li>ABV: {{this.abv}} %</li>
-        <li>IBUS: {{this.ibus}}</li>
-        <li>Description: {{this.description}}</li>
-        <li>Tasting Notes: {{this.tastingNotes}}</li>
-    </ul>
+    
+        <div>
+            Name: {{this.name}}
+        </div>
+
+        <div>
+        <a href="/breweries/{{../brewery._id}}/beers/{{this._id}}">I want to look at this beer</a>
+         </div>
 </div>
     {{/each}}
-
+    <hr>
 <div>
     <a href="/breweries/{{brewery._id}}/beers/new">Add a New Brew!</a>
+</div>
+<div>
+    <a href="/breweries">Breweries Galore!</a>
 </div>

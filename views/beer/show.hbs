@@ -1,0 +1,20 @@
+<h1>{{brewery.name}}'s {{beer.name}}</h1>
+<div>
+    <div>
+    <ul>
+        <li>ABV: {{beer.abv}} %</li>
+        <li>IBUS: {{beer.ibus}}</li>
+        <li>Description: {{beer.description}}</li>
+        <li>Tasting Notes: {{beer.tastingNotes}}</li>
+    </ul>
+</div>
+<div>
+    <a href="/breweries/{{breweryId}}/beers">Let me see more beer!</a>
+</div>
+<div>
+    <a href="/breweries/{{breweryId}}/beers/{{beer._id}}/edit">Let me change something</a>
+</div>
+<div>
+    <a href="/breweries/{{breweryId}}/beers/{{beer._id}}/delete">I hate this beer</a>
+</div>
+</div>

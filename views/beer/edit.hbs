@@ -1,0 +1,25 @@
+<form action="/breweries/{{breweryId}}/beers/{{beer._id}}?_method=PUT" method="POST">
+<ul>
+    <li>
+        <label for="name">Name</label>
+        <input type="text" name="name" value="{{beer.name}}">
+    </li>
+    <li>
+        <label for="abv">ABV</label>
+        <input type="number" name="abv" value="{{beer.abv}}">
+    </li>
+    <li>
+        <label for="ibus">IBUS</label>
+        <input type="number" name="ibus" value="{{beer.ibus}}">
+    </li>
+    <li>
+        <label for="description">Description</label>
+        <input type="text" name="description" value="{{beer.description}}">
+    </li>
+    <li>
+    <label for="tastingNotes">Tasting Notes</label>
+    <input type="text" name="tastingNotes" value="{{beer.tastingNotes}}">
+    </li>
+</ul>
+    <input type="submit" value="Edit {{beer.name}}">
+</form>
