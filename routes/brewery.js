@@ -42,8 +42,35 @@ router.post('/', (request, response) => {
 })
 
 // EDIT ROUTE
+router.get('/:breweryId/edit', (request, response) => {
+    const breweryId = request.params.breweryId
+
+    BreweryModel.findById(breweryId)
+        .then((brewery) => {
+            response.render('brewery/edit', {
+                brewery: brewery
+            })
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+})
 
 // UPDATE ROUTE
+
+router.put('/:breweryId', (request, response) => {
+    const breweryId = request.params.breweryId
+    const updatedBrewery = request.body
+
+    BreweryModel.findByIdAndUpdate(breweryId, updatedBrewery, {new: true})
+        .then(() => {
+            response.redirect(`/breweries/${breweryId}`)
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+
+})
 
 // SHOW ROUTE
 
@@ -62,6 +89,18 @@ router.get('/:breweryId', (request, response) => {
 })
 
 // DELETE ROUTE
+
+router.get('/:breweryId/delete', (request, response) => {
+    const breweryId = request.params.breweryId;
+
+    BreweryModel.findByIdAndRemove(breweryId)
+        .then(() => {
+            response.redirect('/breweries')
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+})
 
 
 

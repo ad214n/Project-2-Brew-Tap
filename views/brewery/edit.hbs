@@ -1,0 +1,15 @@
+<form action="/breweries/{{brewery._id}}?_method=PUT" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" value="{{brewery.name}}">
+
+    <label for="yearBuilt">Year Built</label>
+    <input type="number" name="yearBuilt" value="{{brewery.yearBuilt}}">
+
+    <label for="city">City</label>
+    <input type="text" name="city" value="{{brewery.city}}">
+
+    <label for="state">State</label>
+    <input type="text" name="state" value="{{brewery.state}}">
+
+    <input type="submit" value="Create">
+</form>

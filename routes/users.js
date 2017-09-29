@@ -56,6 +56,9 @@ router.get('/:userId/edit', (request, response) => {
               user: user
             })
           })
+          .catch((error) => {
+            console.log(error)
+          })
 })
 
 
