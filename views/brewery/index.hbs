@@ -1,1 +1,9 @@
 <h1>Home of the Breweries!!!</h1>
+<div>
+    {{#each breweries}}
+    <div>
+        {{this.name}}
+        <a href="/breweries/{{this._id}}">Let me see more!</a>
+    </div>
+    {{/each}}
+</div>
