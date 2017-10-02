@@ -1,19 +1,22 @@
-<h1>This {{user.name}} loves to drink the beer</h1>
+<h1>{{user.name}} loves to drink the beer</h1>
 
     <div>
-        Age: {{user.age}}
+       <strong>Age:</strong> {{user.age}}
     </div>
     <div>
-        Currently Lives In: {{user.city}}
+        <strong>Currently Lives In:</strong> {{user.city}}
     </div>
+
     <div>
-        <a href="/users">Let me see everyone else!</a>
+        <ul class="bmenu">
+            <li><a href="/users/{{user._id}}/edit">Edit {{user.name}}</a></li>
+	        <li><a href="/users">Back to Users</a></li>
+	        <li><a href="/users/{{user._id}}/delete">Delete {{user.name}}</a></li>
+        </ul>
     </div>
-    <div>
-        <a href="/users/{{user._id}}/edit">Change {{user.name}} up!</a>
-    </div>
-    <div>
-        
-        <a class="button" href="/users/{{user._id}}/delete">{{user.name}} wants back on the wagon</a>
-    </div>
+ 
+ <div>
+     <img class="userBeerPic" src="http://is3.mzstatic.com/image/thumb/Purple60/v4/74/03/cb/7403cbac-2beb-0b4f-30d5-a2b6a4400115/source/1200x630bb.jpg" alt="">
+ </div>
+ 
     

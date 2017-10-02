@@ -1,3 +1,4 @@
+<hr>
 <div>
 
     <h1>These people love beer!</h1>
@@ -11,6 +12,7 @@
         <a href="/breweries">Take me to the Breweries!!!</a>
     </div>
 <hr>
+
     {{#each users}}
         <div>
             Name: {{this.name}} - Age: {{this.age}} - Lives in: {{this.city}}
@@ -19,7 +21,7 @@
             <a href="/users/{{this._id}}">{{this.name}}'s Info</a>
         </div>
     {{/each}}
-<hr>
+    <hr>
 
 
 </div>

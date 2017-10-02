@@ -8,13 +8,12 @@
         <li>Tasting Notes: {{beer.tastingNotes}}</li>
     </ul>
 </div>
-<div>
-    <a href="/breweries/{{breweryId}}/beers">Let me see more beer!</a>
-</div>
-<div>
-    <a href="/breweries/{{breweryId}}/beers/{{beer._id}}/edit">Let me change something</a>
-</div>
-<div>
-    <a href="/breweries/{{breweryId}}/beers/{{beer._id}}/delete">I hate this beer</a>
-</div>
+
+
+
+<ul class="bmenu">
+	<li><a href="/breweries/{{breweryId}}/beers">More Beer</a></li>
+	<li><a href="/breweries/{{breweryId}}/beers/{{beer._id}}/edit">Edit {{beer.name}}</a></li>
+	<li><a href="/breweries/{{breweryId}}/beers/{{beer._id}}/delete">Delete {{beer.name}}</a></li>
+</ul>
 </div>

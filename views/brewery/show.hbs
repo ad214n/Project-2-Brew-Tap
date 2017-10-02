@@ -10,13 +10,9 @@
         Want to see their beers???
         <a href="/breweries/{{brewery._id}}/beers">Beer me Blazer!</a>
     </div>
-    <div>
-        <a href="/breweries/{{brewery._id}}/edit">Edit {{brewery.name}}!</a>
-    </div>
-    <div>
-        <a href="/breweries">Back to the Promise land</a>
-    </div>
-    <div>
-        <a href="/breweries/{{brewery._id}}/delete">{{brewery.name}} has to go!</a>
-    </div>
+        <ul class="bmenu">
+	        <li><a href="/breweries/{{brewery._id}}/edit">Edit {{brewery.name}}</a></li>
+	        <li><a href="/breweries">Back the Breweries</a></li>
+	        <li><a href="/breweries/{{brewery._id}}/delete">Delete {{brewery.name}}</a></li>
+        </ul>
 </div>
