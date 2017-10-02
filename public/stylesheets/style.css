@@ -3,10 +3,12 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   position: flex;
-  background: url("http://images.pond5.com/closeup-beer-bubbles-background-footage-025332112_prevstill.jpeg") no-repeat center center fixed;
-  background-size: cover;
+  /* background: url("http://images.pond5.com/closeup-beer-bubbles-background-footage-025332112_prevstill.jpeg") no-repeat center center fixed;
+  background-size: cover; */
   font-size: 25px;
   text-align: center;
+  background-color: #184634;
+  font-family: 'Prociono', serif;
 }
 
 #container {
@@ -29,21 +31,4 @@ ul {
 list-style-type:  none;
 }
 
-/* .button {
-  border: 0;
-  background: #0087cc;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #006599;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 12px 20px;
-  transition: all .1s linear;
-}
-.button:active {
-  box-shadow: 0 2px 0 #006599;
-  transform: translateY(3px);
-} */
 

@@ -1,4 +1,4 @@
-<h1>This {{brewery.name}} can make some beers!!</h1>
+<h1>{{brewery.name}} can make some beers!!</h1>
 
 <div>
     <ul>
@@ -11,12 +11,12 @@
         <a href="/breweries/{{brewery._id}}/beers">Beer me Blazer!</a>
     </div>
     <div>
-        <a href="/breweries/{{brewery._id}}/edit">Edit this place!</a>
+        <a href="/breweries/{{brewery._id}}/edit">Edit {{brewery.name}}!</a>
     </div>
     <div>
         <a href="/breweries">Back to the Promise land</a>
     </div>
     <div>
-        <a href="/breweries/{{brewery._id}}/delete">This place has to go!</a>
+        <a href="/breweries/{{brewery._id}}/delete">{{brewery.name}} has to go!</a>
     </div>
 </div>
