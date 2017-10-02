@@ -66,4 +66,17 @@ list-style-type:  none;
   height: 500px;
   width: auto;
 }
-
+.logo{
+  height: 300px;
+}
+.top{
+  position: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#top1{
+  float: left;
+}
+#top2 {
+  float: right;
+}
