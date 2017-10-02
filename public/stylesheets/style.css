@@ -63,11 +63,11 @@ list-style-type:  none;
 }
 
 .userBeerPic{
-  height: 500px;
+  height: 400px;
   width: auto;
 }
 .logo{
-  height: 300px;
+  height: 100px;
 }
 .top{
   position: flex;
@@ -75,8 +75,20 @@ list-style-type:  none;
   justify-content: space-around;
 }
 #top1{
+  color: Black;
   float: left;
 }
 #top2 {
+  color: black;
   float: right;
+}
+.spin {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+  height: 250px;
+}
+.spin:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
