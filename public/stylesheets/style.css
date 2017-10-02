@@ -84,8 +84,8 @@ list-style-type:  none;
 }
 .spin {
   border-radius: 50%;
-  -webkit-transition: -webkit-transform 2.8s ease-in-out;
-          transition:         transform 2.8s ease-in-out;
+  -webkit-transition: -webkit-transform 5.8s ease-in-out;
+          transition:         transform 5.8s ease-in-out;
   height: 250px;
 }
 .spin:hover {
