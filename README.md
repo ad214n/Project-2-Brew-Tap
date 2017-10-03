@@ -1,5 +1,7 @@
 # Project-2-Brew-Tap
 
+ERD
+https://github.com/jroyals2/Project-2-Brew-Tap/blob/master/ERD%20Project%20two.jpg
 
 Trello Board
 https://trello.com/b/MLPmmkHU/brew-tap
@@ -32,3 +34,4 @@ This is a list of the technologies used in this application
     * Mongoose
 
 I took a code first, style later approach to make sure the functionality of the website was in place before the styling came.  As far as styling, I wanted to use raw CSS for this project without the help of outside libraries.  I would like to continue to add more styling and layout to this project in the future while maintaining the current routes in place.  The only thing I'd like to add to the functionality is authentication and admin permissions. 
+
