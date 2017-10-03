@@ -1,7 +1,7 @@
 # Project-2-Brew-Tap
 
 ERD
-ERD Project two.jpg
+https://github.com/jroyals2/Project-2-Brew-Tap/blob/master/ERD%20Project%20two.jpg
 
 Trello Board
 https://trello.com/b/MLPmmkHU/brew-tap
