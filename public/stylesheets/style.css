@@ -95,3 +95,6 @@ list-style-type:  none;
 #beerImageLeft{
   width: 200px;
 }
+.fry {
+  border-radius: 50%;
+}
