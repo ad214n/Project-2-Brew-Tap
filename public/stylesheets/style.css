@@ -30,7 +30,9 @@ a {
 ul {
 list-style-type:  none;
 }
-
+/* https://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/ 
+    Found this really cool animation here
+*/
 .bmenu{
   padding: 0px;
   margin: 0 0 10px 0;

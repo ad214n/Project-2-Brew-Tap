@@ -17,7 +17,7 @@ This application lacks security so in order for it to become a useful tool, I ne
 Brew tap contains 3 RESTful routes including one which is embedded.
 The models are as followed
 
-User Model
+User Model 
 
 Brewery Model ---> Beer Model
 
