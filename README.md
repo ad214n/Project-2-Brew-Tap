@@ -7,7 +7,7 @@ Trello Board
 https://trello.com/b/MLPmmkHU/brew-tap
 
 Wireframes 
-https://marvelapp.com/project/2298688/screen/32939827
+https://marvelapp.com/2ab1ah9
 
 Heroku Site
 https://dry-refuge-49590.herokuapp.com/
